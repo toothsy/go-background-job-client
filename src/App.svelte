@@ -1,11 +1,13 @@
 <script lang="ts">
+	import LandingPage from "./components/landingPage.svelte";
 </script>
 
-<main class="dark">
-  This is main
-  Ollo
+<main>
+	<LandingPage />
 </main>
 
 <style>
-
+	main {
+		overflow: hidden;
+	}
 </style>
