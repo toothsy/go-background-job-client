@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,400;0,500;1,800&display=swap");
+@tailwind base;
 @tailwind utilities;
 @tailwind components;
-@tailwind base;
 
 * {
 	font-family: 'Alumni Sans', sans-serif;
@@ -12,7 +12,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-	width: 1em;
+	width: .7em;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,5 +29,11 @@ html {
 	* {
 		scrollbar-color: hsl(198, 81%, 45%) hsl(198, 81%, 89%);
 		scrollbar-width: auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	::-webkit-scrollbar {
+		width: .3em;
 	}
 }

@@ -53,7 +53,7 @@
 	}
 </script>
 
-<div class="content-wrapper" on:scroll={updateScroll}>
+<div class="content-wrapper text-white" on:scroll={updateScroll}>
 	<header>
 		<div class="header-wrapper">
 			<h1 class="left">PHOTO</h1>
@@ -78,8 +78,7 @@
 		flex-direction: row;
 		margin: auto;
 		position: absolute;
-		font-size: 4rem;
-		color: hsl(162, 83%, 98%);
+		font-size: 5rem;
 		text-shadow: 0 0 5px black;
 		font-style: italic;
 		transition: transform 0.3s ease;
@@ -124,5 +123,10 @@
 		height: 100%;
 		transform-style: preserve-3d;
 		z-index: -1;
+	}
+	@media only screen and (max-width: 600px) {
+		.header-wrapper {
+			font-size: 4em;
+		}
 	}
 </style>
